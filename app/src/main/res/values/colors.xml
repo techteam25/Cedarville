@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#43b3e6</color>
+    <color name="primaryDark">#2c97d4</color>
+    <color name="queuedMessage">#4cb7f4</color>
+    <color name="backTranslationMessageBackground">#CE2CD4</color>
+    <color name="white">#ffffff</color>
+    <color name="lightBlue">#bde5f2</color>
+    <color name="lightGray">#d3d3d3</color>
+    <color name="lightWhite">#fafafa</color>
+    <color name="darkGray">#404041</color>
+    <color name="gray">#757575</color>
+    <color name="lightDarkGrey">#616161</color>
+    <color name="black">#111111</color>
+    <color name="black_semi_transparent">#80000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="learn_phase">#2AA198</color>
+    <color name="draft_phase">#DC322F</color>
+    <color name="comunity_check_phase">#859900</color>
+    <color name="consultant_check_phase">#268DB2</color>
+    <color name="dramatization_phase">#D33682</color>
+    <color name="create_phase">#6C71C4</color>
+    <color name="share_phase">#CB4B16</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="whole_story_phase">#73c3E6</color>
+    <color name="backT_phase">#a41e8c</color>
+    <color name="remote_check_phase">#551a8b</color>
+    <color name="messagingBkrd">#8e8e93</color>
+    <color name="messagingSecondary">#ceced2</color>
+    <color name="transcript_sent">#d3d3d3</color>
+    <color name="transcript_dirty">#ffffff</color>
+</resources>

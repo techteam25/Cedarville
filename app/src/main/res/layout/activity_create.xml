@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_export"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context="org.sil.storyproducer.controller.export.CreateActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layout_export_configuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/export_title_header"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <EditText
+            android:id="@+id/editText_export_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/export_custom_title"
+            android:inputType="textMultiLine|textCapWords"
+            android:maxLines="4"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/export_options_header"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <CheckBox
+            android:id="@+id/checkbox_export_soundtrack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/export_include_soundtrack" />
+
+        <CheckBox
+            android:id="@+id/checkbox_export_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/export_include_song" />
+
+        <CheckBox
+            android:id="@+id/checkbox_export_pictures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/export_include_pictures" />
+
+        <CheckBox
+            android:id="@+id/checkbox_export_KBFX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/export_include_KBFX" />
+
+
+        <CheckBox
+            android:id="@+id/checkbox_export_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/export_include_text" />
+
+        <Button
+            android:id="@+id/button_export_start"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/export_start"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/button_export_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/export_cancel"/>
+        <ProgressBar
+            android:id="@+id/progress_bar_export"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:progress="0" />
+        <TextView
+            android:id="@+id/cancel_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/export_cancel_comment"
+            android:gravity="center"
+            android:textSize="@dimen/large_text"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lock_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_semi_transparent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_lock_blue"
+            android:contentDescription="@string/stage_locked" />
+    </RelativeLayout>
+</RelativeLayout>
